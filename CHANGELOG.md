@@ -5,60 +5,153 @@
 ***Note:**
 Markdown table generated at <https://www.tablesgenerator.com/markdown_tables#>
 
-|  | hyperv<br>x86_64 | parallels<br>x86_64 | parallels<br>aarch64 | qemu<br>x86_64 | qemu<br>aarch64 | virtualbox<br>x86_64 | virtualbox<br>aarch64 | vmware<br>x86_64 | vmware<br>aarch64 |
+| os | hyperv<br>x86_64 | parallels<br>x86_64 | parallels<br>aarch64 | qemu<br>x86_64 | qemu<br>aarch64 | virtualbox<br>x86_64 | virtualbox<br>aarch64 | vmware<br>x86_64 | vmware<br>aarch64 |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | almalinux-8 |  | x |  | x |  | x |  | x |  |
 | almalinux-9 |  | x | x |  |  | x |  | x | x |
-| amazonlinux-2 |  | na | na |  |  |  | na |  | na |
-| amazonlinux-2023 | na | na | na | na | na | na | na | na | na |
-| centos-7 |  | x |  | x |  | x |  | x |  |
-| centos-stream-8 |  | x |  | x |  | x |  | x |  |
-| centos-stream-9 |  |  | x |  |  |  |  |  |  |
+| amazonlinux-2 |  |  |  |  |  | x |  |  |  |
+| amazonlinux-2023 |  |  |  |  |  | x |  |  |  |
+| centos-stream-9 |  | x |  |  |  | x |  | x | x |
 | debian-11 |  | x | x |  |  | x |  | x |  |
 | debian-12 |  | x | x |  |  | x |  | x | x |
-| fedora-37 |  | x | x | x |  | x |  | x | x |
-| fedora-38 |  | x |  | x |  | x |  | x | x |
-| freebsd-12 |  |  |  |  |  | x |  | x |  |
-| freebsd-13 |  |  |  |  |  | x |  | x |  |
-| opensuse-leap-15 |  | x |  | x |  | x |  | x |  |
-| oraclelinux-7 |  | x |  | x |  | x |  | x |  |
-| oraclelinux-8 |  |  |  | x |  | x |  | x |  |
-| oraclelinux-9 |  | x | x |  |  | x |  | x |  |
-| rhel-7 | license<br>needed | license<br>needed | license<br>needed | license<br>needed | license<br>needed | license<br>needed | license<br>needed | license<br>needed | license<br>needed |
+| fedora-39 |  | x | x | x |  | x |  | x | x |
+| fedora-40 |  | x |  | x |  | x |  | x | x |
+| freebsd-13 |  |  |  |  |  | x |  | x | x |
+| freebsd-14 |  |  |  |  |  |  |  |  |  |
+| macos |  |  | x |  |  |  |  |  |  |
+| opensuse-leap-15 |  |  |  | x |  | x |  | x | x |
+| oraclelinux-8 |  |  |  |  |  | x |  | x |  |
+| oraclelinux-9 |  | x | x |  |  | x |  | x | x |
 | rhel-8 | license<br>needed | license<br>needed | license<br>needed | license<br>needed | license<br>needed | license<br>needed | license<br>needed | license<br>needed | license<br>needed |
 | rhel-9 | license<br>needed | license<br>needed | license<br>needed | license<br>needed | license<br>needed | license<br>needed | license<br>needed | license<br>needed | license<br>needed |
 | rockylinux-8 |  | x |  | x |  | x |  | x |  |
 | rockylinux-9 |  | x |  |  |  | x |  | x | x |
-| scientificlinux-7 |  | x | na | x | na | x | na | x | na |
 | sles-12 | license<br>needed | license<br>needed | na | license<br>needed | na | license<br>needed | na | license<br>needed | na |
-| sles-13 | license<br>needed | license<br>needed | na | license<br>needed | na | license<br>needed | na | license<br>needed | na |
+| sles-15 | license<br>needed | license<br>needed | na | license<br>needed | na | license<br>needed | na | license<br>needed | na |
 | solaris-11 | license<br>needed | license<br>needed | na | license<br>needed | na | license<br>needed | na | license<br>needed | na |
-| springdalelinux-7 |  | x | na | x | na |  | na |  | na |
-| springdalelinux-8 |  | x | na | x | na | x | na | x | na |
-| springdalelinux-9 |  |  | na |  | na |  | na |  | na |
-| ubuntu-20.04 |  | x | x |  |  | x |  | x | x |
-| ubuntu-22.04 |  | x |  | x |  | x |  | x |  |
-| ubuntu-23.04 |  | x |  | x |  | x |  | x |  |
-| windows-10 |  | x | na |  | na | x | na |  | na |
-| windows-11 |  | x | na |  | na | x | na |  | na |
-| windows-2016 |  | x | na |  | na | x | na |  | na |
-| windows-2019 |  | x | na |  | na | x | na |  | na |
+| ubuntu-20.04 |  |  | x |  |  | x |  | x | x |
+| ubuntu-22.04 |  | x |  |  |  | x |  |  |  |
+| ubuntu-24.04 |  | x | x | x |  | x |  | x | x |
+| windows-10 |  |  | na |  | na | x | na |  | na |
+| windows-11 |  | x | x |  |  | x |  | x |  |
+| windows-2016 |  | x | na |  | na | x | na | x | na |
+| windows-2019 |  | x | na |  | na | x | na | x | na |
 | windows-2022 |  | x | na |  | na | x | na |  | na |
 
 ### Todo
 
 - Fix failing builds
-- migrate from http directory for hosting files to floppy_files or cd_files in source templates
+- migrate from http directory for hosting files to cd_files in source templates
   - This makes all builds compatible with hyper-v gen 2 which removes floppy disk capability
-  - This also makes things universal for Virtualbox 6.1 to 7.x due to latter requiring extra config for guests on NAT to be able to connect to host
-  - Also eliminates any potential networking issues
+  - Eliminates any potential networking issues
 - Update pipelines to only run on updated pkrvars files
-- Look into making all build uefi default builds
+- Look into making all builds uefi default builds
 - Create CD pipeline to upload vagrant boxes after PR is merged
 - Create CD pipeline to build and upload new versions of vagrant boxes once every 3 months with the latest patches
-- Added ability to configure bento upload of private or public boxes in builds.yml, defaults to private
 
-## [unreleased] (2023-09-15)
+## [unreleased] (2024-05-23)
+
+- Update almalinux 8 to 8.10
+- Update rockylinux 8 to 8.10
+- Update oraclelinux 8 to 8.10
+- Update rhel 8 to 8.10
+- Update freebsd 14 to 14.1
+
+## [v4.1.2] (2024-05-23)
+
+- Fix for hyper-v build option
+- Remove test-kitchen and kitchen-vagrant dependencies from gemspec to fix gem compile error on windows
+- Updated hyper-v builds to use github actions hosted runners
+- Updated VMware builds to use github actions hosted runners
+- Better handle bento uploads of slugs ending in 'latest'
+- Fix oraclelinux slug names
+- Update almalinux 9.3 to 9.4
+- Update rhel 9.3 to 94
+- Update oraclelinux 9.3 to 9.4
+- Update rockylinux 9.3 to 9.4
+- Remove Centos 7, Centos Stream 8, RHEL 7, Oraclelinux 7 builds due to EOL
+- Fix windows qemu args to match disk format when variable is specified
+
+## [v4.1.1] (2024-04-26)
+
+- Require ruby >= 3.0.0
+- Add parallels-ipsw source
+- Added MacOS template for parallels-ipsw
+- Created MacOS scripts
+- Adjusted build flags to all be lower case for consistency
+- Removed extra amazonlinux directories to be more consistent with other builds
+- Added build_files directory for all temp files to be stored in during packer building
+- Opensuse-leap-15.5 updated to 15.6
+- Remove Fedora 38 and add 40 builds
+- Remove Ubuntu 23.10 and add 24.04 builds
+
+## [v4.1.0] (2024-04-11)
+
+- Add back iso check, packer lint, and amazonlinux builds to build pipeline
+- Fix amazonlinux 2 build script
+- Added amazonlinux 2023 build scripts
+- Migrate Virtualbox and Qemu builds to github hosted runners from self-hosted runners
+- Added test-kitchen and kitchen-vagrant dependencies to gemspec
+- Added arg for bento test command to specify a specific build to test - this passes the arg to the kitchen test command
+- Fix vagrant post-processor to specify custom vagrant file for freebsd builds
+- Remove gui true from windows custom vagrant file
+- Fix test to skip removing linux-firmware on oraclelinux
+- Renamed oracle boxes to oraclelinux for consistency and remove edge cases in code
+- Removed unused -c flag for specifying a specific config file for bento build
+- Added --on-error flag to bento build command to pass to packer command
+- Added cpu architecture support to bento build command, so it'll only test builds that work with the current cpu architecture
+- Remove additional Ubuntu user-date last-command that may be locking macaddress
+- Add to test to move failed test boxes to builds/failed_testing directory
+- Changed ssh_timeout to 15m
+
+## [v4.0.2] (2024-03-20)
+
+- Update upload message to show architecture
+- Fix open-vm-tools install for vmware builds
+- Fix amazonlinux 2 build script
+- Added amazonlinux 2023 build scripts
+- Allow failed tests to continue and report at the end each test that failed
+- Added amazonlinux aarch64 packer templates
+- removed unneeded config from amazon user-data script for seed.iso
+- Added additional qemu variables for various qemu source properties
+- Added virtualbox-ovf vbox_source_path and vbox_checksum variables
+- Added recursive flag to rhel cleanup scripts for persistent network files
+
+## [v4.0.1] (2024-02-16)
+
+- Fix metadata file box_basename
+- Updated Debian 11 to 11.9
+- Updated Debian 12 to 12.5
+- Added Windows 11 aarch64 template
+
+## [v4.0.0] (2024-02-05)
+
+- Added Vagrant Cloud architecture flags so amd64 and arm64 boxes can live under the same cloud box
+- Setting amd64 as default architecture for uploads, configurable in the builds.yml file
+- Update descriptions mentioning chef to progress chef
+- Update README.md to reflect vagrant version for new architecture support
+
+## [v3.2.2] (2024-02-01)
+
+- Fix upload private or public flag lookup in builds.yml
+- Fix yum cleanup script for oracle linux 7 error removing linux-firmware
+- Fix ubuntu user-data post command modifying a file that doesn't exist on 23.10
+
+## [v3.2.1] (2024-01-31)
+
+- Fix build list generation on aarch64 machines
+- Updated Debian 12 to 12.4
+- Updated RockyLinux 9 to 9.3
+- Updated Oracle Linux 8 to 8.9
+- Updated Oracle Linux 9 to 9.3
+- Added FreeBSD 14
+- Removed FreeBSD 12
+- Added Fedora 39
+- Removed Fedora 37
+- Remove Scientific Linux 7
+- Remove Springdale Linux builds
+- Removed Ubuntu 23.04
+- Added Ubuntu 23.10
 
 ## [v.3.2.0] (2023-09-15)
 
@@ -76,6 +169,7 @@ Markdown table generated at <https://www.tablesgenerator.com/markdown_tables#>
 - Updated Bento to continue builds even if one fails and report all failures at the end and exit with exit code 1
 - Added qemu clone of libvirt box when metadata file is created for uploading to vagrant qemu provider
 - Made build shell scripts customizable through packer variable
+- Added ability to configure bento upload of private or public boxes in builds.yml, defaults to private
 
 ## [v3.1.1] (2023-07-07)
 
